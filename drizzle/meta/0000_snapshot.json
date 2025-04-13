@@ -1,0 +1,139 @@
+{
+	"version": "6",
+	"dialect": "sqlite",
+	"id": "6a71cea6-3324-4c3a-8872-8f18d8317a80",
+	"prevId": "00000000-0000-0000-0000-000000000000",
+	"tables": {
+		"habit_logs": {
+			"name": "habit_logs",
+			"columns": {
+				"id": {
+					"name": "id",
+					"type": "integer",
+					"primaryKey": true,
+					"notNull": true,
+					"autoincrement": true
+				},
+				"habit_id": {
+					"name": "habit_id",
+					"type": "integer",
+					"primaryKey": false,
+					"notNull": false,
+					"autoincrement": false
+				},
+				"date": {
+					"name": "date",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": true,
+					"autoincrement": false
+				},
+				"created_at": {
+					"name": "created_at",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": false,
+					"autoincrement": false,
+					"default": "(current_timestamp)"
+				},
+				"updated_at": {
+					"name": "updated_at",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": false,
+					"autoincrement": false,
+					"default": "(current_timestamp)"
+				}
+			},
+			"indexes": {},
+			"foreignKeys": {
+				"habit_logs_habit_id_habits_id_fk": {
+					"name": "habit_logs_habit_id_habits_id_fk",
+					"tableFrom": "habit_logs",
+					"tableTo": "habits",
+					"columnsFrom": ["habit_id"],
+					"columnsTo": ["id"],
+					"onDelete": "cascade",
+					"onUpdate": "no action"
+				}
+			},
+			"compositePrimaryKeys": {},
+			"uniqueConstraints": {},
+			"checkConstraints": {}
+		},
+		"habits": {
+			"name": "habits",
+			"columns": {
+				"id": {
+					"name": "id",
+					"type": "integer",
+					"primaryKey": true,
+					"notNull": true,
+					"autoincrement": true
+				},
+				"name": {
+					"name": "name",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": true,
+					"autoincrement": false
+				},
+				"created_at": {
+					"name": "created_at",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": false,
+					"autoincrement": false,
+					"default": "(current_timestamp)"
+				},
+				"updated_at": {
+					"name": "updated_at",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": false,
+					"autoincrement": false,
+					"default": "(current_timestamp)"
+				}
+			},
+			"indexes": {},
+			"foreignKeys": {},
+			"compositePrimaryKeys": {},
+			"uniqueConstraints": {},
+			"checkConstraints": {}
+		},
+		"user": {
+			"name": "user",
+			"columns": {
+				"id": {
+					"name": "id",
+					"type": "integer",
+					"primaryKey": true,
+					"notNull": true,
+					"autoincrement": false
+				},
+				"age": {
+					"name": "age",
+					"type": "integer",
+					"primaryKey": false,
+					"notNull": false,
+					"autoincrement": false
+				}
+			},
+			"indexes": {},
+			"foreignKeys": {},
+			"compositePrimaryKeys": {},
+			"uniqueConstraints": {},
+			"checkConstraints": {}
+		}
+	},
+	"views": {},
+	"enums": {},
+	"_meta": {
+		"schemas": {},
+		"tables": {},
+		"columns": {}
+	},
+	"internal": {
+		"indexes": {}
+	}
+}

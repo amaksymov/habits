@@ -1,18 +1,55 @@
-# sv
+# Habits
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+# 📱 Habit Tracker — MVP Feature List
 
-## Creating a project
+## ✅ Core Features (Included in MVP)
 
-If you're seeing this, you've probably already done this step. Congrats!
+### 📋 Main Screen
 
-```bash
-# create a new project in the current directory
-npx sv create
+- [x] Display list of habits
+- [x] Ability to mark a habit as completed
+- [x] Show current status of each habit (done / not done)
 
-# create a new project in my-app
-npx sv create my-app
-```
+### ➕ Create/Edit Habit
+
+- [x] Add a new habit (name only)
+- [x] Delete a habit
+- [x] Edit the name of a habit
+
+### 📈 Habit Statistics
+
+- [x] Show number of times the habit was completed
+- [x] Simple progress visualization (e.g., a counter or text)
+- [ ] _(Optional)_ Calendar view of habit completion (can be added later)
+
+### 💾 Data Storage
+
+- [x] Use `localStorage` or a basic backend to store user data
+
+### 📱 Interface & UX
+
+- [x] Mobile-first layout
+- [x] Responsive design for tablets/desktops
+- [x] Clean and minimal UI for easy usage
+
+---
+
+## 🧪 Features Not in MVP (Future Ideas)
+
+- [ ] Notifications or reminders
+- [ ] User login/authentication
+- [ ] Cross-device syncing
+- [ ] Custom icons/colors for habits
+- [ ] Filtering, sorting, habit categories
+- [ ] Fancy charts, animations, dark mode
+
+---
+
+## 🔁 Next Steps
+
+- Build MVP with only the core features
+- Test it with real users (yourself, friends)
+- Get feedback and iterate
 
 ## Developing
 

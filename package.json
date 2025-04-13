@@ -51,6 +51,10 @@
 	},
 	"dependencies": {
 		"better-sqlite3": "^11.8.0",
+		"cal-heatmap": "^4.2.4",
+		"chart.js": "^4.4.8",
+		"daisyui": "^5.0.9",
+		"dayjs": "^1.11.13",
 		"drizzle-orm": "^0.40.0"
 	}
 }
